@@ -24,3 +24,7 @@ java -jar $SCRIPT_DIR/sources/swagger-codegen-cli.jar generate \
   -l php \
   -o ./ \
   -c $SCRIPT_DIR/config.json
+
+# Fixing the code to replace old removed function with new method
+find ./src -type f -name '*.php' \
+  -exec sed -i 's#\\GuzzleHttp\\Psr7\\build_query#\\GuzzleHttp\\Psr7\\Query::build#g' {} \;
