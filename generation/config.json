@@ -1,0 +1,10 @@
+{
+   "variableNamingConvention": "camelCase",
+   "invokerPackage": "Planfix",
+   "packageName": "Planfix",
+   "packagePath": "./",
+   "srcBasePath": "src",
+   "gitUserId": "demliz-org",
+   "gitRepoId": "planfix-api",
+   "artifactVersion": "1.0.3"
+}
